@@ -85,14 +85,6 @@ body {
 }
 
 @media (min-width: 996px) { /*desktop view*/
-  .task-3-1.container{
-    display: grid;
-    height: 100vh;
-    grid-template-columns repeat(12, 1fr);
-    grid-template-rows: auto auto 1fr auto;
-    gap: 20px;
-  }
-
   .task-3-1 nav {
     grid-column: 3 / span 8;
   }
