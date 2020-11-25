@@ -54,7 +54,7 @@ body {
   gap: 15px;
 }
 
-@media (min-width: 720px) { /*tablet view*/
+@media (min-width: 768px) { /*tablet view*/
   .task-3-1.container{
     display: grid;
     height: 100vh;
@@ -84,7 +84,7 @@ body {
   }
 }
 
-@media (min-width: 996px) { /*desktop view*/
+@media (min-width: 1200px) { /*desktop view*/
   .task-3-1 nav {
     grid-column: 3 / span 8;
   }
@@ -103,7 +103,7 @@ body {
   }
 }
 
-/* Grid Template Areas */
+/* Start Grid Template Areas */
 
 .task-3-2 header {
   grid-area: header;
@@ -167,4 +167,12 @@ body {
       "sidebar main main ads"
       "footer footer footer footer"
   }
+}
+
+/* End Grid Template Areas */
+
+.task-4.container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* the column should never be less than 150px and share the space evenly */
 }
