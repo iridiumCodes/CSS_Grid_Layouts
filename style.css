@@ -53,3 +53,33 @@ body {
   grid-template-rows: auto auto 1fr auto auto auto;
   gap: 15px;
 }
+
+@media (min-width: 720px) { /*tablet view*/
+  .task-3-1.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+  }
+
+  .task-3-1 header {
+    grid-column: 1 / span 12;
+  }
+  .task-3-1 nav {
+    grid-column: 1 / span 12;
+  }
+  .task-3-1 main {
+    grid-column: 3 / span 10;
+  }
+  .task-3-1 aside {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  .task-3-1 .ads {
+    grid-column: 1 / span 2;
+  }
+  .task-3-1 footer {
+    grid-column: 3 / span 10;
+  }
+}
